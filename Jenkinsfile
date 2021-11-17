@@ -2,6 +2,16 @@
       agent any
      
        stages {
+            stage('Checkout') {
+                checkout scm    
+            }
+            
+            stage('Test') {
+                steps {
+                    echo 'Running unit tests ... '
+                }
+            }
+            
             stage('Build') {
                steps {
                    script {
@@ -10,11 +20,6 @@
                }
             }
             
-            stage('Test') {
-                steps {
-                    echo 'Running unit tests ... '
-                }
-            }
             
             stage('Deploy') {
                 steps {
