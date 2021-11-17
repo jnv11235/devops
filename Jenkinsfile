@@ -4,19 +4,22 @@
        stages {
             stage('Build') {
                steps {
-                    echo 'Hello World'
+                    dockerImage = docker.build "jnv1123/spring_app"
                }
             }
             
             stage('Test') {
                 steps {
-                    echo 'Running tests ... '
+                    echo 'Running unit tests ... '
                 }
             }
             
             stage('Deploy') {
                 steps {
-                    echo 'Deploying to production ... '
+                    docker.withRegistry('','credencials-id') {
+                        dockerImage.push("v_$BUILD_NUMBER")
+                        dockerImage.push("latest")
+                    }
                 }
             }
         }
