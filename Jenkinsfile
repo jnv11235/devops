@@ -4,7 +4,9 @@
        stages {
             stage('Build') {
                steps {
-                    dockerImage = docker.build "jnv1123/spring_app"
+                   script {
+                        dockerImage = docker.build "jnv1123/spring_app"
+                    }
                }
             }
             
