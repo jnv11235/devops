@@ -18,7 +18,7 @@
             
             stage('Deploy') {
                 steps {
-                    docker.withRegistry('','credencials-id') {
+                    docker.withRegistry('','credentials-id') {
                         dockerImage.push("v_$BUILD_NUMBER")
                         dockerImage.push("latest")
                     }
