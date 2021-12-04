@@ -26,7 +26,7 @@
                 steps {
                     script {
                         docker.withRegistry('','243d2e83-d8f9-4992-923e-49aef413470d') {
-                            dockerImage.push("BUILD_ID")
+                            dockerImage.push("$BUILD_ID")
                             dockerImage.push("latest")
                             }
                         }
