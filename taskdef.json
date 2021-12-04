@@ -30,13 +30,13 @@
       "secrets": [],
       "dockerSecurityOptions": [],
       "volumesFrom": [],
-      "image": "jnv1123/spring_app:latest",
+      "image": "gabalconi/curso_devops:latest",
       "dependsOn": [],
       "essential": true,
       "links": [],
       "extraHosts": [],
       "systemControls": [],
-      "name": "HelloWorld"
+      "name": "helloworld"
     }
   ],
   "placementConstraints": [],
