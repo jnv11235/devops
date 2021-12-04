@@ -36,11 +36,12 @@
       "links": [],
       "extraHosts": [],
       "systemControls": [],
-      "name": "helloWorld"
+      "name": "HelloWorld"
     }
   ],
   "placementConstraints": [],
   "memory": "512",
+  "taskRoleArn": "",
   "family": "first-run-task-definition",
   "requiresCompatibilities": [
     "FARGATE"
