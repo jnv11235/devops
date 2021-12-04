@@ -43,9 +43,6 @@
   "memory": "512",
   "taskRoleArn": "",
   "family": "first-run-task-definition",
-  "requiresCompatibilities": [
-    "FARGATE"
-  ],
   "networkMode": "awsvpc",
   "cpu": "256",
   "inferenceAccelerators": [],
