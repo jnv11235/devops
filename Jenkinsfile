@@ -42,7 +42,7 @@
                                --family first-run-task-definition \
                                --cli-input-json file://taskdef.json"
                             
-                            sh "aws ecs update-service --service helloworld-service --cluseter helloworld --force-new-deployment"
+                            sh "aws ecs update-service --service helloworld-service --cluster helloworld --force-new-deployment"
                         }
                     }
                 }
