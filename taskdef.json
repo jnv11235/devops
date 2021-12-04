@@ -1,6 +1,4 @@
 {
-  "ipcMode": [],
-  "executionRoleArn": "arn:aws:iam::056648368947:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": [],
@@ -23,52 +21,32 @@
         }
       ],
       "command": [],
-      "linuxParameters": [],
       "cpu": 0,
       "environment": [],
       "resourceRequirements": [],
       "ulimits": [],
       "dnsServers": [],
       "mountPoints": [],
-      "workingDirectory": [],
       "secrets": [],
       "dockerSecurityOptions": [],
-      "memory": [],
-      "memoryReservation": [],
       "volumesFrom": [],
-      "stopTimeout": [],
       "image": "jnv1123/spring_app:latest",
-      "startTimeout": [],
-      "firelensConfiguration": [],
       "dependsOn": [],
-      "disableNetworking": [],
-      "interactive": [],
-      "healthCheck": [],
       "essential": true,
       "links": [],
-      "hostname": [],
       "extraHosts": [],
-      "pseudoTerminal": [],
-      "user": [],
-      "readonlyRootFilesystem": [],
-      "dockerLabels": [],
       "systemControls": [],
-      "privileged": [],
-      "name": "custom"
+      "name": "helloWorld"
     }
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": [],
   "family": "first-run-task-definition",
-  "pidMode": [],
   "requiresCompatibilities": [
     "FARGATE"
   ],
   "networkMode": "awsvpc",
-  "runtimePlatform": [],
   "cpu": "256",
   "inferenceAccelerators": [],
-  "proxyConfiguration": [],
   "volumes": []
 }
